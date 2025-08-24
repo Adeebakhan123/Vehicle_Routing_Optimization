@@ -1,10 +1,9 @@
 # Vehicle_Routing_Optimization
-This project implements a Genetic Algorithm (GA) to solve the Vehicle Routing Problem (VRP) using the DEAP framework
- in Python.
+This project implements a Genetic Algorithm (GA) to solve the Vehicle Routing Problem (VRP) using the DEAP framework in Python.
 
 The VRP is a classic combinatorial optimisation problem where a fleet of vehicles must serve a set of locations starting and ending at a depot, minimizing the total travel distance while balancing the workload among vehicles.
 
- Features:
+Features:
 
 Implemented with Genetic Algorithms (GA) using the DEAP framework.
 
@@ -17,20 +16,27 @@ Custom fitness function considering:
 ## How It Works:
 
 Representation:
+
 Each individual represents a permutation of customer visits, assigned cyclically to vehicles.
 
 Fitness Function:
+
 Computes the total distance traveled.
+
 Measures the balance of workload using standard deviation of route distances.
+
 def evalVRP(individual):
     # Returns (total_distance, distance_std_dev)
 
 Genetic Operators:
 Selection: Tournament / Roulette wheel.
+
 Crossover: Ordered crossover (OX).
+
 Mutation: Swap mutation.
 
 Optimization Goal:
+
 Minimize total travel distance while maintaining balanced vehicle routes.
 
 ** Future Improvements
